@@ -17,8 +17,20 @@ class MBoardSitemapObject extends AbstractSitemapObjectObjectType {
 	/**
 	 * @inheritdoc
 	 */
+	public function getObjectList() {
+		$objectList = parent::getObjectList();
+		$objectList->sqlJoins .= ' LEFT JOIN wbb' . WCF_N . '_thread thread_table ON thread_table.boardID = board.boardID';
+		$objectList->sqlConditionJoins .= ' LEFT JOIN wbb' . WCF_N . '_thread thread_table ON thread_table.boardID = board.boardID';
+		$objectList->sqlSelects .= (!empty($objectList->sqlSelects) ? ', ' : '') . 'MAX(thread_table.lastPostTime)';
+		
+		return $objectList;
+	}
+	
+	/**
+	 * @inheritdoc
+	 */
 	public function getLastModifiedColumn() {
-		return parent::getLastModifiedColumn();
+		return 'lastPostTime';
 	}
 	
 	/**

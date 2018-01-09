@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="de.mysterycode.wbb.legacy50in30" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/package.xsd">
+<package name="de.mysterycode.wbb.legacy50in31" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/package.xsd">
 	<packageinformation>
 		<packagename>WSC 3.1: WSF 5.0 Compatibility</packagename>
 		<packagedescription><![CDATA[Makes it possible to install a WSF 5.0 into your WSC 3.1]]></packagedescription>

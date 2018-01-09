@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.mysterycode.wbb.legacy50in30" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/package.xsd">
+	<packageinformation>
+		<packagename>WSC 3.1: WSF 5.0 Compatibility</packagename>
+		<packagedescription><![CDATA[Makes it possible to install a WSF 5.0 into your WSC 3.1]]></packagedescription>
+		<version>1.0.0 Alpha 1</version>
+		<date>2018-01-09</date>
+	</packageinformation>
+
+	<authorinformation>
+		<author><![CDATA[Florian Gail]]></author>
+		<authorurl><![CDATA[https://www.mysterycode.de]]></authorurl>
+	</authorinformation>
+
+	<compatibility>
+		<api version="2018" />
+	</compatibility>
+
+	<requiredpackages>
+		<requiredpackage minversion="3.1.0 Beta 5">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+	<excludedpackages>
+		<excludedpackage version="3.2.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+		<excludedpackage version="5.1.0 Alpha 1">com.woltlab.wbb</excludedpackage>
+	</excludedpackages>
+
+	<instructions type="install">
+		<instruction type="sql" />
+		<instruction type="language" />
+
+		<!-- files -->
+		<instruction type="file" application="wbb">files_wbb.tar</instruction>
+		<instruction type="file" application="wcf">files_wcf.tar</instruction>
+		<instruction type="acpTemplate" />
+		<instruction type="template" />
+
+		<!-- xml -->
+		<instruction type="objectTypeDefinition">xml/objectTypeDefinition.xml</instruction>
+		<instruction type="objectType">xml/objectType.xml</instruction>
+		<instruction type="eventListener">xml/eventlistener.xml</instruction>
+		<instruction type="option">xml/option.xml</instruction>
+		<instruction type="templateListener">xml/templateListener.xml</instruction>
+		<instruction type="userGroupOption">xml/userGroupOption.xml</instruction>
+
+		<!-- scripts -->
+		<instruction type="script" installupdateserver="1">acp/install_de.mysterycode.wbb.legacy50in30.php</instruction>
+	</instructions>
+</package>

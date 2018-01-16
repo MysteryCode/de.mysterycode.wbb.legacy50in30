@@ -44,6 +44,6 @@
 		<instruction type="userGroupOption">xml/userGroupOption.xml</instruction>
 
 		<!-- scripts -->
-		<instruction type="script" installupdateserver="1">acp/install_de.mysterycode.wbb.legacy50in30.php</instruction>
+		<instruction type="script" application="wbb">acp/install_de.mysterycode.wbb.legacy50in31.php</instruction>
 	</instructions>
 </package>

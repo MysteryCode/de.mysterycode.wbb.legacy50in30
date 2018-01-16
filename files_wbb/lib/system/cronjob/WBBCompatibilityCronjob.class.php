@@ -18,7 +18,7 @@ class WBBCompatibilityCronjob extends AbstractCronjob {
 					AND packageUpdateVersionID IN (
 						SELECT  packageUpdateVersionID
 						FROM    wcf".WCF_N."_package_update_version
-						WHERE   packageVersib LIKE ?
+						WHERE   packageVersion LIKE ?
 							AND packageUpdateID = (
 							SELECT  packageUpdateID
 							FROM    wcf".WCF_N."_package_update

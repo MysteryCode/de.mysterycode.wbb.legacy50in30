@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/cronjob.xsd">
+	<import>
+		<cronjob name="de.mysterycode.wbb.legacy50in31.wbbCompatibility">
+			<classname>wcf\system\cronjob\WBBCompatibiltyCronjob</classname>
+			<description>Removes WSC 3.1-Exclude for WBB 5.0-Updates</description>
+			<description language="de">Entfernt WSC 3.1-Ausschlüsse für WBB 5.0-Updates</description>
+			<startminute>10</startminute>
+			<starthour>2</starthour>
+			<startdom>*/2</startdom>
+			<startmonth>*</startmonth>
+			<startdow>*</startdow>
+			<canbeedited>1</canbeedited>
+			<canbedisabled>1</canbedisabled>
+		</cronjob>
+	</import>
+</data>

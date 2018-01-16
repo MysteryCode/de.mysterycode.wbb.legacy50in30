@@ -26,22 +26,13 @@
 	</excludedpackages>
 
 	<instructions type="install">
-		<instruction type="sql" />
-		<instruction type="language" />
-
 		<!-- files -->
 		<instruction type="file" application="wbb">files_wbb.tar</instruction>
 		<instruction type="file" application="wcf">files_wcf.tar</instruction>
-		<instruction type="acpTemplate" />
-		<instruction type="template" />
 
 		<!-- xml -->
-		<instruction type="objectTypeDefinition">xml/objectTypeDefinition.xml</instruction>
-		<instruction type="objectType">xml/objectType.xml</instruction>
-		<instruction type="eventListener">xml/eventlistener.xml</instruction>
-		<instruction type="option">xml/option.xml</instruction>
-		<instruction type="templateListener">xml/templateListener.xml</instruction>
-		<instruction type="userGroupOption">xml/userGroupOption.xml</instruction>
+		<instruction type="objectType" />
+		<instruction type="cronjob" />
 
 		<!-- scripts -->
 		<instruction type="script" application="wbb">acp/install_de.mysterycode.wbb.legacy50in31.php</instruction>

@@ -3,8 +3,8 @@
 	<packageinformation>
 		<packagename>WSC 3.1: WSF 5.0 Compatibility</packagename>
 		<packagedescription><![CDATA[Makes it possible to install a WSF 5.0 into your WSC 3.1]]></packagedescription>
-		<version>1.0.0 Alpha 1</version>
-		<date>2018-01-09</date>
+		<version>0.9.1 Alpha 1</version>
+		<date>2018-01-17</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -13,11 +13,11 @@
 	</authorinformation>
 
 	<compatibility>
-		<api version="2018" />
+		<api version="2017" />
 	</compatibility>
 
 	<requiredpackages>
-		<requiredpackage minversion="3.1.0 Beta 5">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="3.0.11">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
 
 	<excludedpackages>
@@ -31,7 +31,6 @@
 		<instruction type="file" application="wcf">files_wcf.tar</instruction>
 
 		<!-- xml -->
-		<instruction type="objectType" />
 		<instruction type="cronjob" />
 
 		<!-- scripts -->

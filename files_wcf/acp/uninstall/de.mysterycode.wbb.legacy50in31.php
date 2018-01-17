@@ -9,7 +9,7 @@ $sql = "INSERT INTO     wcf".WCF_N."_package_update_exclusion
 		SELECT  packageUpdateVersionID, ?, ?
 		FROM    wcf".WCF_N."_package_update_version
 		WHERE   packageVersion LIKE ?
-			AND packageUpdateID = (
+			AND packageUpdateID IN (
 				SELECT  packageUpdateID
 				FROM    wcf".WCF_N."_package_update
 				WHERE   package = ?

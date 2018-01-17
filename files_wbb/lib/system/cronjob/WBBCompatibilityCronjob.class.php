@@ -1,8 +1,9 @@
 <?php
 
-namespace wcf\system\cronjob;
+namespace wbb\system\cronjob;
 
 use wcf\data\cronjob\Cronjob;
+use wcf\system\cronjob\AbstractCronjob;
 use wcf\system\WCF;
 
 class WBBCompatibilityCronjob extends AbstractCronjob {

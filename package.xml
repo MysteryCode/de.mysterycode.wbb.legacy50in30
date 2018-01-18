@@ -17,7 +17,9 @@
 	</compatibility>
 
 	<requiredpackages>
-		<requiredpackage minversion="3.1.0 Beta 5">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="3.1.0 RC 1">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="3.1.0 RC 1">com.woltlab.wcf.conversation</requiredpackage>
+		<requiredpackage minversion="3.1.0 RC 1">com.woltlab.wcf.infraction</requiredpackage>
 	</requiredpackages>
 
 	<excludedpackages>
